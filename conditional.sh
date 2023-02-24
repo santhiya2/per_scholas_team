@@ -22,4 +22,4 @@ echo "command $com is correct"
 else 
 echo "the correct command to create directory is mkdir"
 fi
-
+#loops
