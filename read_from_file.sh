@@ -18,18 +18,18 @@
 # echo "Line #$count: $line"
 # count=$(( $count + 1 ))
 # done
-
-grep Mr[^s] read_file.csv  > new.csv
-grep Mrs read_file.csv >> new.csv
-grep Ms read_file.csv >> new.csv
-grep Miss read_file.csv >> new.csv
+#grep -i read all capital or lowercase 
+grep -i Mr[^s] read_file.csv  > new.csv
+grep -i Mrs read_file.csv >> new.csv
+grep -i Ms read_file.csv >> new.csv
+grep -i Miss read_file.csv >> new.csv
 read -p "Enter the text that you want to append:" newtext
    #echo "$newtext" >> read_file.csv
    #/dev/null prevent showing the output in the terminal.
    echo $newtext | tee -a  read_file.csv  > /dev/null
  
 
-cat read_file.csv
+#cat read_file.csv
 
 
 
